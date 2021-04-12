@@ -1,9 +1,9 @@
 # Social-Distancing-in-Real-Time
 Social distancing in Real-Time using live video stream/IP camera in OpenCV.
-> Please refer to the added [Features](#features).
+> Please refer to the added Features.
 
-     Output | Output
-:-------------------------:
+    Output
+::-------------------::
 - Use case: counting the number of people in the stores/buildings/shopping malls etc., in real-time.
 - Sending an alert to the staff if the people are way over the social distancing limits.
 - Optimizing the real-time stream for better performance (with threading).
@@ -26,7 +26,8 @@ Social distancing in Real-Time using live video stream/IP camera in OpenCV.
 
 ---
 **Distance calculation:**
-- NMS (Non-maxima suppression) is also used to reduce overlapping bounding boxes to only a single bounding box, thus representing the true detection of the object. Having overlapping boxes is not exactly practical and ideal, especially if we need to count the number of objects in an image.
+- NMS (Non-maxima suppression) is also used to reduce overlapping bounding boxes to only a single bounding box, thus representing the true detection of the object. 
+- Having overlapping boxes is not exactly practical and ideal, especially if we need to count the number of objects in an image.
 - Euclidean distance is then computed between all pairs of the returned centroids. Simply, a centroid is the center of a bounding box.
 - Based on these pairwise distances, we check to see if any two people are less than/close to 'N' pixels apart.
 
