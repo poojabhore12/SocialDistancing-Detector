@@ -41,11 +41,6 @@ pip install -r requirements.txt
 
 > Click [**here**](https://jamesbowley.co.uk/accelerate-opencv-4-2-0-build-with-cuda-and-python-bindings/) for build instructions on Windows.
 
-
-- To run inference on a test video file, head into the directory/use the command:
-```
-python run.py -i mylib/videos/test.mp4
-```
 - To run inference on an IP camera, Setup your camera url in 'mylib/config.py':
 
 - Then run with the command:
